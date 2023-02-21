@@ -23,7 +23,7 @@ const projectAddAdmin = ()=>{
       }
       axios.post("http://localhost:3000/APIproject", projectAdd)
       .then(()=> router.navigate("/admin/projectListAdmin"))
-      .catch(()=> alert("Add to Fail !"))
+      .catch(()=> alert("Không thể ADD!"))
     })
   });
 

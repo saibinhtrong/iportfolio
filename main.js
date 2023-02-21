@@ -7,6 +7,18 @@ import HomePage from "./src/client";
 import { render, router } from "./src/lib";
 
 const app = document.querySelector("#app");
+
+router.on("/admin/*", () => {},{
+        before(done){
+            // const user = JSON.parse(localStorage.getItem("user")) | [];
+        // if (!user) return (window.location.href = "/");
+        // if (user && user.id != "1") return (window.location.href = "/login");              
+
+
+                done();
+        }
+});
+
 router.on("/", ()=>render(HomePage, app))
 router.on("/admin/projectListAdmin", ()=>render(projectListAdmin, app))
 router.on("/admin/projectAddAdmin", ()=>render(projectAddAdmin, app))

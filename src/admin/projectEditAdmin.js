@@ -18,11 +18,11 @@ const projectEditAdmin= ({id})=>{
                 name: nameProject.value,
                 date: date.value,
                 language: language.value,
-                gallery: urls,
+                // gallery: urls,
             };
             axios.put(`http://localhost:3000/APIproject/${id}`, formData)
             .then(()=> router.navigate("/admin/projectListAdmin"))
-            .catch(()=> alert("Edit to fail !"))
+            .catch(()=> alert("Không thể edit !"))
         })
     })
     return `
