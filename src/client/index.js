@@ -36,7 +36,7 @@ const HomePage = ()=>{
                             href="#contact">Contact</a>
                     </li>
                     <li><a href="/login"
-                            class="text-[16px] text-[#3f0edf] tra font-bold tracking-[1px] border px-10 py-2 border-[#3f0edf] hover:bg-[#f75023] hover:text-[#ffff] rounded-md">Đăng Nhập</a>
+                            class="text-[16px] text-[#886ce2] tra font-bold tracking-[1px] border px-10 py-2 border-[#e4e1ed00] hover:bg-[#f75023] hover:text-[#ffff] rounded-md">Đăng Nhập</a>
                     </li>
 
                 </ul>
